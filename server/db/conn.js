@@ -1,8 +1,8 @@
 //mongodb connection
 
 const mongoose = require('mongoose')
-mongoose.set('strictQuery', false)
-
+mongoose.set('strictQuery', true)
+// mongoose.set(‘strictQuery’, true) 
 require('dotenv').config({ path: '../config.env' })
 const ATLAS_URL = process.env.ATLAS_URL
 
